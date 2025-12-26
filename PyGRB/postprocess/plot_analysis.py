@@ -3,6 +3,12 @@ import scipy.stats as stats
 import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
 
+try:
+    from grb_common.plotting import publication_style
+    publication_style()
+except ImportError:
+    pass
+
 from PyGRB.postprocess.abp import AbstractBasePlot
 
 
